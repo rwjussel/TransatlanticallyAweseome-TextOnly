@@ -3,7 +3,7 @@
 <head>
 <script type="text/javascript" src="js/nr.js">
 </script>
-
+<!--  Instana Instrumentation for DEM / Browser 
 <script>
   (function(s,t,a,n){s[t]||(s[t]=a,n=s[a]=function(){n.q.push(arguments)},
   n.q=[],n.v=2,n.l=1*new Date)})(window,"InstanaEumObject","ineum");
@@ -13,8 +13,11 @@
   ineum('trackSessions');
 </script>
 <script defer crossorigin="anonymous" src="https://eum.instana.io/eum.min.js"></script>
+-->
+
 <script>
   let mode = 'dark';
+  let hosting = 'local'
 </script>
 <title>Transatlanticallyawesome</title>
 <style>
@@ -129,6 +132,7 @@ AAAAAAA                   AAAAAAA  ttttttttttt  llllllll  aaaaaaaaaa  aaaa nnnnn
                                                                                                                                                                                                         
 
 </pre>
+<p id = "hostMetadata"></p>
 <p hidden>
   This is a placeholder text page.  Created by Jussel Inc. with help (theft) from 
 
@@ -144,6 +148,9 @@ AND
 for some CSS tricks https://adhuham.com/
 Thank You!                                                                                                                          
 </p>
+<script>
+     document.getElementById("hostMetadata").textContent = "Hosted on: "+ hosting;
+</script>
 </div>
 </div>
 </body>
