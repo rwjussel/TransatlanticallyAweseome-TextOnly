@@ -17,9 +17,9 @@
 
 <script>
   let mode = 'dark';
-  let hosting = 'local'
-  const gitAuthorName = process.env.GIT_AUTHOR_NAME;
-  const gitRepo = process.env.GITHUB_REPOSITORY;
+  let hosting = 'github.io'
+  //const gitAuthorName = process.env.GIT_AUTHOR_NAME;
+  //const gitRepo = process.env.GITHUB_REPOSITORY;
 </script>
 <title>Transatlanticallyawesome</title>
 <style>
@@ -134,7 +134,7 @@ AAAAAAA                   AAAAAAA  ttttttttttt  llllllll  aaaaaaaaaa  aaaa nnnnn
                                                                                                                                                                                                         
 
 </pre>
-<p id = "hostMetadata"></p>
+<p hidden id = "hostMetadata"></p>
 <p hidden>
   This is a placeholder text page.  Created by Jussel Inc. with help (theft) from 
 
@@ -152,7 +152,9 @@ Thank You!
 </p>
 <script>
      document.getElementById("hostMetadata").textContent = "Hosted on: "+ hosting;
-     console.log(gitRepo, gitAuthorName)
+     console.log("Hosted on: "+ hosting);
+     //TODO: add env variable support and static site generator
+     //console.log(gitRepo, gitAuthorName)
 </script>
 </div>
 </div>
