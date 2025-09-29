@@ -18,6 +18,8 @@
 <script>
   let mode = 'dark';
   let hosting = 'local'
+  const gitAuthorName = process.env.GIT_AUTHOR_NAME;
+  const gitRepo = process.env.GITHUB_REPOSITORY;
 </script>
 <title>Transatlanticallyawesome</title>
 <style>
@@ -150,6 +152,7 @@ Thank You!
 </p>
 <script>
      document.getElementById("hostMetadata").textContent = "Hosted on: "+ hosting;
+     console.log(gitRepo, gitAuthorName)
 </script>
 </div>
 </div>
